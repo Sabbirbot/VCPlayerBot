@@ -345,12 +345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         elif query.data == "shuffle":
             if not Config.playlist:
-                await query.answer("Playlist is empty.\n join @BDBOTS ✅
-@Woxreview ✅
-@MirrorCloudbd ✅
-@Blackmaxbd ✅
-@International_Love_Squad ❤️✅
-", show_alert=True)
+                await query.answer("Playlist is empty.\n join @BDBOTS ✅", show_alert=True)
                 return
             await shuffle_playlist()
             await query.answer("Playlist shuffled.")
